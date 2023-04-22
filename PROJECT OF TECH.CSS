@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.79)),url(../ASSET/IMAGES/pngwing.com\ \(1\).png);
+    background-size: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#header{
+    width: 100%;
+    height: 480px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px black;
+}
+#headervid{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    /* filter: brightness(100%) hue-rotate(180deg); */
+}
+#headingtext{
+    position: absolute;
+    z-index: 3;
+    font-size: 80px;
+    letter-spacing: 25px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+
+}
+#robo1{
+    position: absolute;
+    z-index: 3;
+    left: 580px;
+    bottom: 280px;
+    width: 80px;
+    filter: drop-shadow(5px 5px 5px black);
+    border-radius: 100%;
+}
+#robo2{
+    position: absolute;
+    z-index: 3;
+    right: 490px;
+    bottom:210px;
+    width: 50px;
+    transition: bottom 0.5s;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#robo3{
+    position: absolute;
+    z-index: 3;
+    right: 450px;
+    bottom:-100px;
+    width: 100px;
+    transition: bottom 0.5s;
+    transition-timing-function: ease-in;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#header:hover #robo3{
+    bottom:-120px;
+}
+#greet{
+    position: relative;
+    z-index: 4;
+    top: 100px;
+    right: 60px;
+    width: 120px;
+    background-color: white;
+    border-radius: 200px;
+    text-align: center;
+    filter: opacity(0);
+    transition: filter 0.5s ;
+}

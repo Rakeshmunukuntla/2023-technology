@@ -1,0 +1,61 @@
+*{
+    padding: 0PX;
+    margin: 0PX;
+}
+#navbar{
+    width: 100%;
+    height: 7.5vh;
+    background-color: rgba(0, 0, 0, 0.58);
+}
+#mainlist{
+    list-style: none;
+    display: flex;
+}
+.li{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    height: 2vh;
+    transition: transform 0.5s;
+}
+.li:hover{
+    background-color: rgb(135, 235, 185);
+    color: black;
+    transform: scaleX(1.2);
+}
+#sublist{
+    list-style: none;
+    display: none;
+}
+#hov:hover #sublist
+{
+    display: block;
+}
+#hov:hover .sli{
+    color: white;
+}
+.sli{
+    background-color: black;
+    width: 120px;
+    position: relative;
+    right:20px;
+    top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: transform 0.5s;
+}
+.sli:hover{
+    background-color: rgb(135, 235, 185);
+    color: black;
+    transform: translateX(20px);
+}
+#hov{
+    width:80px
+}
+input{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
